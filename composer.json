@@ -1,0 +1,29 @@
+{
+    "name": "asyrafhussin/bright-installer",
+    "description": "Bright Framework Installer",
+    "keywords": ["php", "php-framework", "bright"],
+    "license": "MIT",
+    "homepage": "https://brightframework.psm.my",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Asyraf Hussin",
+            "email": "asyrafhussin4@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bright\\Installer\\Console\\": "src/"
+        }
+    },
+    "require": {
+        "ext-zip": "*",
+        "guzzlehttp/guzzle": "~4.0|~5.0|~6.0",
+        "symfony/console": "~2.3|~3.0",
+        "symfony/filesystem": "~2.3|~3.0",
+        "symfony/process": "~2.3|~3.0"
+    },
+    "bin": [
+        "bright"
+    ]
+}
