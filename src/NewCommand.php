@@ -16,5 +16,16 @@ use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 class NewCommand extends Command
 {
-
+    /**
+     * Configure the command options.
+     *
+     * @return void
+     */
+    protected function configure()
+    {
+        $this
+            ->setName('new')
+            ->setDescription('Create a new Bright application.')
+            ->addArgument('name', InputArgument::OPTIONAL);
+    }
 }
